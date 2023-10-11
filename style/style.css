@@ -1,0 +1,367 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, "Arial CE", sans-serif;
+}
+
+.fat {
+  font-weight: bold;
+}
+
+h2 {
+  color: #ff8533;
+  text-align: center;
+}
+
+h3 {
+  color: #356778;
+  font-size: 20px;
+  background-image: url(../img/h3pasek.jpg);
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 33px;
+}
+
+table {
+  position: absolute;
+  left: 0;
+  height: 100px;
+}
+table .parm {
+  background-color: #f1f1f1;
+  color: #b36a56;
+  padding: 8px;
+  border: 1px solid #d2c7af;
+  font-weight: bold;
+}
+table .value {
+  background-color: #f1f1f1;
+  border: 1px solid #d2c7af;
+  padding: 8px;
+}
+
+.cookie_box {
+  width: 100%;
+  padding: 10px 0;
+  background: #e6e6e6;
+  position: relative;
+}
+
+.cookie_container {
+  width: 980px;
+  margin: 0 auto;
+  color: #636363;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.cookie_container p {
+  padding: 0;
+  margin: 0;
+}
+
+.cookie_close {
+  display: block;
+  float: right;
+  margin-left: 20px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 18px;
+  background: #939393;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+header {
+  width: 980px;
+  background-image: linear-gradient(rgb(48, 47, 47), #336475, #336475);
+  position: relative;
+}
+header .header-text {
+  height: 100px;
+}
+header .header-text img {
+  height: 100px;
+  width: 100px;
+  margin-right: 10px;
+}
+header .header-text h1 {
+  position: absolute;
+  top: 0;
+  left: 110px;
+  color: #fff;
+  font-size: 28px;
+}
+header .header-text h1 span {
+  width: 300px;
+  display: inline-block;
+  position: absolute;
+  left: 550px;
+}
+header .header-text .adres {
+  font-weight: bold;
+  position: absolute;
+  top: 60px;
+  display: inline-block;
+  color: #fff;
+}
+header .header-text .adres a {
+  color: #ff8533;
+}
+
+.naglowek2 img {
+  max-width: 980px;
+  min-width: 980px;
+  bottom: 0;
+  height: 169px;
+  width: 100vw;
+}
+
+nav {
+  position: relative;
+  width: 980px;
+  display: flex;
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+nav .nav-item {
+  border: solid 1px rgb(255, 255, 255);
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #dedddc;
+}
+nav .nav-item a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  line-height: 50px;
+}
+nav .nav-item a li {
+  list-style: none;
+}
+nav .nav-item1 {
+  width: 170px;
+}
+nav .nav-item2 {
+  width: 100px;
+}
+nav .nav-item3 {
+  width: 190px;
+}
+nav .nav-item3 .dropdown li {
+  font-size: 12px;
+  background-color: #dedddc;
+  transition: color 0.3s;
+  opacity: 0;
+}
+nav .nav-item4 {
+  width: 190px;
+}
+nav .nav-item4 .dropdown li {
+  background-color: #dedddc;
+  transition: color 0.3s;
+  opacity: 0;
+  font-size: 12px;
+}
+nav .nav-item5 {
+  width: 250px;
+}
+nav .nav-item5 .dropdown li {
+  width: 230px;
+  background-color: #dedddc;
+  transition: color 0.3s;
+  opacity: 0;
+  font-size: 12px;
+}
+nav .nav-item6 {
+  width: 110px;
+}
+nav .nav-box {
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  transition: bacground-color 0.3s;
+}
+nav .dropdown {
+  width: 190px;
+}
+nav .dropdown li {
+  background-color: #dedddc;
+  transition: color 0.3s;
+  display: none;
+}
+
+.nav-box:hover .dropdown li {
+  display: block;
+  animation: menu1 0.5s forwards;
+}
+
+.dropdown:hover li {
+  display: block;
+}
+
+.nav-box:hover .dropdown li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.nav-box:hover .dropdown li:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.nav-box:hover .dropdown li:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.nav-box:hover .dropdown li:nth-child(5) {
+  animation-delay: 0.7s;
+}
+
+.nav-box:hover .dropdown li:nth-child(6) {
+  animation-delay: 1s;
+}
+
+@keyframes menu1 {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.box_container {
+  display: flex;
+  flex-direction: row;
+  width: 980px;
+}
+.box_container .box {
+  margin: 15px;
+  width: 300px;
+}
+.box_container .box .box_header {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  background-color: orange;
+  color: #dedddc;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.box_container .box .box_ul {
+  list-style: none;
+}
+.box_container .box .box_ul a {
+  color: #000;
+  font-weight: bold;
+}
+.box_container .box img {
+  width: 300px;
+  height: 150px;
+}
+
+.rzetelna-firma {
+  width: 980px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #336475;
+  height: 20px;
+  width: 980px;
+}
+
+.container-ofirmie {
+  width: 980px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+.container-ofirmie .container-ofirmie-text {
+  font-size: 14px;
+  width: 60%;
+  height: 100%;
+}
+.container-ofirmie .ofirmie-img {
+  margin-top: 50px;
+  margin-left: 20px;
+  background-image: url(../img/zdjfirma.jpg);
+  display: inline-block;
+  width: 33%;
+  height: 39%;
+  background-size: contain;
+  border-image-repeat: stretch;
+}
+
+.kontakt-container {
+  display: flex;
+  flex-direction: row;
+  width: 980px;
+}
+.kontakt-container .kontakt-tex {
+  display: block;
+  width: 20%;
+}
+.kontakt-container .map-kontakt {
+  width: 80%;
+}
+
+.siatki-ogrodzeniowe-container {
+  z-index: -1;
+}
+.siatki-ogrodzeniowe-container p {
+  font-weight: bold;
+  margin: 5px 0 5px 0;
+}
+.siatki-ogrodzeniowe-container .Ogrodzeniowe-Ocynkowane {
+  width: 980px;
+  text-align: left;
+  position: relative;
+  height: 530px;
+}
+.siatki-ogrodzeniowe-container .Ogrodzeniowe-PCV {
+  width: 980px;
+  text-align: left;
+  position: relative;
+  height: 580px;
+}
+
+.Drut-container {
+  width: 980px;
+  height: 500px;
+  position: relative;
+  z-index: -1;
+}
+.Drut-container .Drut table {
+  height: 50px;
+}
+
+.slupki-container {
+  width: 980px;
+  height: 580px;
+  position: relative;
+  z-index: -1;
+}
+.slupki-container .Drut table {
+  height: 50px;
+}/*# sourceMappingURL=style.css.map */
